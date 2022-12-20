@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:get_routes/comum_navigation/off/off_home_page.dart';
 import 'package:get_routes/comum_navigation/to/to_home_page.dart';
 
 import 'back/back_home_page.dart';
@@ -28,6 +29,12 @@ class ComumNavigationHomePage extends StatelessWidget {
                 Get.to(const BackHomePage());
               },
               child: const Text("Back (pop)"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Get.to(const OffHomePage());
+              },
+              child: const Text("Off (****)"),
             ),
           ],
         ),
