@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_routes/comum_navigation/off/off_home_page.dart';
+import 'package:get_routes/comum_navigation/offAll/off_all_home_page.dart';
+import 'package:get_routes/comum_navigation/send_params/send_params_home_page.dart';
 import 'package:get_routes/comum_navigation/to/to_home_page.dart';
 
 import 'back/back_home_page.dart';
@@ -34,7 +36,25 @@ class ComumNavigationHomePage extends StatelessWidget {
               onPressed: () {
                 Get.to(const OffHomePage());
               },
-              child: const Text("Off (****)"),
+              child: const Text("Off (Replacement)"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Get.to(const OffAllHomePage());
+              },
+              child: const Text("Off (PopAndRemoveUntil)"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Get.to(const OffAllHomePage());
+              },
+              child: const Text("Off (PopAndRemoveUntil)"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Get.to(const SendParamsHomePage());
+              },
+              child: const Text("Send Params"),
             ),
           ],
         ),
